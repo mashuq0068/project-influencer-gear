@@ -1,0 +1,216 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin:0px;
+  padding:0px;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+color:var(--color);
+background-color: #FFF;
+
+
+}
+img{
+  width:100%;
+}
+:root{
+  --color:#3A3A3A;
+  --color-gray:#787885;
+  --color-white:#FFF;
+
+}
+nav{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  
+}
+nav  ul{
+  display: flex;
+  gap:30px;
+  
+  
+ 
+ 
+}
+.items{
+  list-style: none;
+  font-weight: 600;
+ 
+
+}
+a{
+  text-decoration: none;
+}
+header{
+  padding:5%;
+ 
+  
+  
+}
+.banner-picture img{
+  background-image: url(./influencer-gear/images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+ 
+}
+.banner-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:7%;
+ 
+ 
+  
+  
+}
+.title-medium{
+  font-size:1.5rem;
+  font-weight: 700;
+}
+.description{
+  font-weight: 600;
+
+}
+.title{
+  font-size:3.2rem;
+}
+.banner-description{
+  margin-top:5%;
+  margin-bottom:5%;
+}
+.banner-title{
+margin-top: 5%;
+}
+.btn-primary{
+  color: #FFF;
+
+
+font-style: normal;
+font-weight: 700;
+
+border-radius: 41px;
+background-color: #E02C6D;
+padding:2% 5%;
+border: none;
+}
+main{
+  max-width:80vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+.logos-container{
+  display: flex;
+  justify-content: space-evenly;
+ 
+  margin-right: auto;
+  margin-left:auto;
+  margin-top: 10%;
+  margin-bottom:10%;
+  flex-wrap: wrap;
+}
+.logos-container img{
+  width:7%;
+}
+.cards-container{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:3%;
+}
+.cards-container div{
+  border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+height: 476px;
+padding:5%;
+
+}
+.card h1{
+  margin-top:5%;
+  font-size:1.8rem;
+  font-weight:500;
+}
+.card>.card-description{
+  margin-top:5%;
+  font-weight: 700;
+  color: var(--color-gray);
+}
+.price{
+  font-size:1.5rem;
+  font-weight:100;
+  margin-top:5%;
+}
+.collection-title{
+  font-size:1.8rem;
+  font-weight: 600;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:5%;
+}
+@media screen and (max-width:576px){
+  .hide{
+    display: none;
+  }
+  .banner-container{
+    flex-direction: column-reverse;
+   
+  }
+ 
+  .cards-container{
+    grid-template-columns: repeat(1,1fr);
+    row-gap:15px;
+  }
+  .header-title{
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+  }
+ .banner-text{
+  text-align: center;
+ }
+ .logos-container img{
+  width:15%;
+  
+ 
+ }
+ .logos-container{
+  gap:30px;
+}
+ 
+  
+  
+}
+@media screen and (max-width:960px) and (min-width:577px){
+  .hide{
+    display: none;
+  }
+  .banner-container{
+    flex-direction: column-reverse;
+   
+  }
+  .banner-text{
+    text-align: center;
+   }
+   .cards-container{
+    grid-template-columns: repeat(2,1fr);
+    row-gap:15px;
+    text-align: center;
+  }
+    .header-title{
+      width: max-content;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .card9{
+      grid-column: span 2;
+    }
+
+  
+}
